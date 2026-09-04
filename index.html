@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Klinika Jugović — stomatološka ordinacija, Šabac</title>
+<meta name="description" content="Privatna stomatološka ordinacija u centru Šapca. Opšta i estetska stomatologija, dečja stomatologija, profesionalno čišćenje i beljenje zuba. Prvi pregled je besplatan.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="Klinika Jugović — stomatološka ordinacija, Šabac">
+<meta property="og:description" content="Privatna ordinacija u centru Šapca. Prvi pregled je besplatan.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231b4ea8'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='34' fill='%23fff'%3EJ%3C/text%3E%3C/svg%3E">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&display=swap">
+<link rel="stylesheet" href="_ds/nocturne-97cc184a-73bb-45fb-9f2c-649d516743d5/styles.css">
+<script src="_ds/nocturne-97cc184a-73bb-45fb-9f2c-649d516743d5/_ds_bundle.js"></script>
+<script src="image-slot.js"></script>
+<style>
+  :root {
+    --color-bg: #ffffff;
+    --color-surface: #f7f7fb;
+    --color-text: #1b4ea8;
+    --color-neutral-700: #2b62c4;
+    --color-neutral-600: #4a7ad6;
+    --color-divider: color-mix(in srgb, #15205c 15%, transparent);
+    --color-section: #15205c;
+    --color-section-glow: #1f2f83;
+    --color-section-ghost: #4b5aa6;
+    --font-heading: "Newsreader", Georgia, serif;
+    --font-heading-weight: 500;
+    --font-body: "Inter", system-ui, sans-serif;
+    --color-accent: #2f5bd6;
+    --color-accent-2: #2f5bd6;
+    --color-accent-100: #eef3ff;
+    --color-accent-200: #d6e2ff;
+    --color-accent-300: #adc4fb;
+    --color-accent-400: #7b9cf3;
+    --color-accent-500: #4f77e4;
+    --color-accent-600: #2f5bd6;
+    --color-accent-700: #2246a8;
+    --color-accent-800: #1a3379;
+    --color-accent-900: #14224b;
+    --shadow-sm: 0 0 0 1px #e4e7f5;
+    --shadow-md: 0 0 0 1px #e4e7f5, 0 6px 20px rgba(27,28,36,0.08);
+    --shadow-lg: 0 0 0 1px #cfd3e5, 0 18px 44px rgba(27,28,36,0.14);
+  }
+  .lighten { mix-blend-mode: normal; }
+  .btn-primary {
+    background: var(--color-accent-600);
+    border-color: var(--color-accent-600);
+    color: #ffffff;
+    padding: 14px 26px;
+    font-size: 15.5px;
+    border-radius: var(--radius-md);
+  }
+  .btn-primary:hover { background: var(--color-accent-700); border-color: var(--color-accent-700); color: #ffffff; }
+  .btn-primary:active { background: var(--color-accent-800); border-color: var(--color-accent-800); }
+  html, body { max-width: 100%; overflow-x: hidden; width: 100%; }
+  #root, [data-dc-root] { width: 100%; max-width: none; }
+  body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); }
+  a { color: var(--color-accent-700); text-decoration: none; overflow-wrap: anywhere; }
+  img, iframe, table { max-width: 100%; }
+  a:hover { color: var(--color-accent-600); }
+  ::selection { background: var(--color-accent-200); }
+  @keyframes dentisFade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+</style>
+</helmet>
+
+<div style="min-height: 100vh; background: var(--color-bg); font-family: var(--font-body); font-size: 18px; line-height: 1.6;">
+
+  <header style="position: sticky; top: 0; z-index: 40; backdrop-filter: blur(14px); background: color-mix(in srgb, var(--color-bg) 86%, transparent); border-bottom: 1px solid var(--color-divider);">
+    <div style="max-width: 1100px; margin: 0 auto; padding: 14px clamp(18px, 5vw, 22.4px); display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+      <button onClick="{{ goPocetna }}" style="display: flex; align-items: baseline; gap: 8.4px; background: none; border: 0; padding: 0; cursor: pointer; font-family: var(--font-heading);">
+        <span style="font-size: clamp(18px, 1.8vw, 21px); font-weight: 500; letter-spacing: -0.02em; color: var(--color-text);">Jugović</span>
+        <span style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-accent);">Klinika</span>
+      </button>
+      <sc-if value="{{ sirok }}" hint-placeholder-val="{{ true }}">
+      <nav style="display: flex; align-items: center; flex-wrap: wrap; gap: 2px; row-gap: 4px; margin-left: auto;">
+        <button onClick="{{ goPocetna }}" style="background: none; border: 0; padding: 6px clamp(6px, 0.8vw, 9px); font-family: var(--font-body); font-size: clamp(12px, 1.1vw, 13.5px); cursor: pointer; white-space: nowrap; border-radius: var(--radius-sm); color: {{ navColor.pocetna }};">Početna</button>
+        <button onClick="{{ goUsluge }}" style="background: none; border: 0; padding: 6px clamp(6px, 0.8vw, 9px); font-family: var(--font-body); font-size: clamp(12px, 1.1vw, 13.5px); cursor: pointer; white-space: nowrap; border-radius: var(--radius-sm); color: {{ navColor.usluge }};">Usluge</button>
+        <button onClick="{{ goONama }}" style="background: none; border: 0; padding: 6px clamp(6px, 0.8vw, 9px); font-family: var(--font-body); font-size: clamp(12px, 1.1vw, 13.5px); cursor: pointer; white-space: nowrap; border-radius: var(--radius-sm); color: {{ navColor.onama }};">O nama</button>
+        <button onClick="{{ goCenovnik }}" style="background: none; border: 0; padding: 6px clamp(6px, 0.8vw, 9px); font-family: var(--font-body); font-size: clamp(12px, 1.1vw, 13.5px); cursor: pointer; white-space: nowrap; border-radius: var(--radius-sm); color: {{ navColor.cenovnik }};">Cenovnik</button>
+        <button onClick="{{ goKontakt }}" style="background: none; border: 0; padding: 6px clamp(6px, 0.8vw, 9px); font-family: var(--font-body); font-size: clamp(12px, 1.1vw, 13.5px); cursor: pointer; white-space: nowrap; border-radius: var(--radius-sm); color: {{ navColor.kontakt }};">Kontakt</button>
+      </nav>
+      </sc-if>
+
+      <sc-if value="{{ uzak }}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; align-items: center; gap: 8px; margin-left: auto;">
+        <button onClick="{{ prebaciMeni }}" aria-label="Meni" style="display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; padding: 0 10px; background: none; border: 1px solid var(--color-divider); border-radius: var(--radius-sm); cursor: pointer;">
+          <span style="display: block; height: 1.5px; background: var(--color-text);"></span>
+          <span style="display: block; height: 1.5px; background: var(--color-text);"></span>
+          <span style="display: block; height: 1.5px; background: var(--color-text);"></span>
+        </button>
+      </div>
+      </sc-if>
+    </div>
+
+    <sc-if value="{{ meniOtvoren }}" hint-placeholder-val="{{ false }}">
+      <div style="border-top: 1px solid var(--color-divider); background: var(--color-bg); animation: dentisFade 0.25s ease both;">
+        <div style="max-width: 1100px; margin: 0 auto; padding: 8px clamp(18px, 5vw, 22.4px) 22.4px; display: flex; flex-direction: column;">
+          <button onClick="{{ goPocetna }}" style="background: none; border: 0; padding: 14px 0; text-align: left; font-family: var(--font-body); font-size: 17px; cursor: pointer; color: var(--color-text); border-bottom: 1px solid var(--color-divider);">Početna</button>
+          <button onClick="{{ goUsluge }}" style="background: none; border: 0; padding: 14px 0; text-align: left; font-family: var(--font-body); font-size: 17px; cursor: pointer; color: var(--color-text); border-bottom: 1px solid var(--color-divider);">Usluge</button>
+          <button onClick="{{ goONama }}" style="background: none; border: 0; padding: 14px 0; text-align: left; font-family: var(--font-body); font-size: 17px; cursor: pointer; color: var(--color-text); border-bottom: 1px solid var(--color-divider);">O nama</button>
+          <button onClick="{{ goCenovnik }}" style="background: none; border: 0; padding: 14px 0; text-align: left; font-family: var(--font-body); font-size: 17px; cursor: pointer; color: var(--color-text); border-bottom: 1px solid var(--color-divider);">Cenovnik</button>
+          <button onClick="{{ goKontakt }}" style="background: none; border: 0; padding: 14px 0; text-align: left; font-family: var(--font-body); font-size: 17px; cursor: pointer; color: var(--color-text); border-bottom: 1px solid var(--color-divider);">Kontakt</button>
+          <button onClick="{{ goZakazivanje }}" style="background: none; border: 0; padding: 14px 0; text-align: left; font-family: var(--font-body); font-size: 17px; cursor: pointer; color: var(--color-accent-600); border-bottom: 1px solid var(--color-divider);">Zakaži termin</button>
+          <a href="tel:+38115300400" style="padding: 18px 0 4px; font-size: 15px;">015 300 400</a>
+        </div>
+      </div>
+    </sc-if>
+  </header>
+
+  <sc-if value="{{ isPocetna }}" hint-placeholder-val="{{ true }}">
+  <main>
+
+    <sc-if value="{{ isHeroA }}" hint-placeholder-val="{{ true }}">
+    <section style="max-width: 1100px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(18px, 5vw, 22.4px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: clamp(28px, 4vw, 56px); align-items: center;">
+      <div style="animation: dentisFade 0.6s ease both;">
+        <div style="display: flex; align-items: center; gap: 11.2px; margin-bottom: 22.4px;">
+          <span style="display: block; width: 42px; height: 1px; background: var(--color-accent);"></span>
+          <span style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700);">Ordinacija od 2009.</span>
+        </div>
+        <h1 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(34px, 4.5vw, 54px); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 22.4px; text-wrap: pretty; color: var(--color-text);">Mirna stomatologija.<br>Rezultat koji se<br>ne primeti&nbsp;— osim vama.</h1>
+        <p style="max-width: 44ch; font-size: 18px; color: var(--color-neutral-600); margin: 0 0 33.6px; text-wrap: pretty;">Privatna ordinacija u centru Šapca. Tiho okruženje, jedan pacijent u jednom terminu i plan lečenja koji dobijate na papiru pre prve intervencije.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 11.2px; margin-bottom: 33.6px;">
+          <button class="btn btn-primary" onClick="{{ goZakazivanje }}">Zakaži besplatnu konsultaciju</button>
+          <button class="btn btn-ghost" onClick="{{ goUsluge }}">Pogledaj usluge</button>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 24px 33.6px; padding-top: 22.4px; border-top: 1px solid var(--color-divider);">
+          <div>
+            <div style="font-family: var(--font-heading); font-size: 26px; font-weight: 500; color: var(--color-text);">16 god.</div>
+            <div style="font-size: 12.5px; color: var(--color-neutral-600);">iskustva u praksi</div>
+          </div>
+          <div>
+            <div style="font-family: var(--font-heading); font-size: 26px; font-weight: 500; color: var(--color-text);">4.9/5</div>
+            <div style="font-size: 12.5px; color: var(--color-neutral-600);">ocena pacijenata</div>
+          </div>
+          <div>
+            <div style="font-family: var(--font-heading); font-size: 26px; font-weight: 500; color: var(--color-text);">48 h</div>
+            <div style="font-size: 12.5px; color: var(--color-neutral-600);">prosečno do termina</div>
+          </div>
+        </div>
+      </div>
+      <div class="lighten" style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); aspect-ratio: 4 / 5;">
+        <image-slot id="hero-a" src="https://d8j0ntlcm91z4.cloudfront.net/user_3IJK95KBky8W2Adx3iaAv4phacB/hf_20260903_161729_8f19ad9d-ca36-4e59-aecc-40e419747883.png" shape="rounded" placeholder="Fotografija ordinacije ili stomatologa, snimljena na tamnoj pozadini"></image-slot>
+      </div>
+    </section>
+    </sc-if>
+
+    <sc-if value="{{ isHeroB }}" hint-placeholder-val="{{ false }}">
+    <section style="position: relative; min-height: min(560px, 78vh); display: flex; align-items: flex-end; overflow: hidden; border-bottom: 1px solid var(--color-divider);">
+      <div class="lighten" style="position: absolute; inset: 0;">
+        <image-slot id="hero-b" src="https://d8j0ntlcm91z4.cloudfront.net/user_3IJK95KBky8W2Adx3iaAv4phacB/hf_20260903_161621_c37c1b76-3620-4f72-b7bb-8f8d688c55ce.png" shape="rect" placeholder="Široka fotografija ordinacije na tamnoj pozadini"></image-slot>
+      </div>
+      <div style="position: absolute; inset: 0; background: linear-gradient(90deg, var(--color-bg) 8%, color-mix(in srgb, var(--color-bg) 55%, transparent) 62%, transparent 100%);"></div>
+      <div style="position: relative; max-width: 1100px; margin: 0 auto; width: 100%; padding: clamp(72px, 12vw, 128px) clamp(18px, 5vw, 22.4px) clamp(56px, 8vw, 96px); animation: dentisFade 0.6s ease both;">
+        <span style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700);">Šabac · Karađorđeva 41</span>
+        <h1 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(34px, 4.5vw, 54px); line-height: 1.08; letter-spacing: -0.035em; margin: 16.8px 0 22.4px; max-width: 17ch; text-wrap: pretty; color: var(--color-text);">Vaš zub zaslužuje strpljenje.</h1>
+        <p style="max-width: 42ch; font-size: 18px; color: var(--color-neutral-700); margin: 0 0 33.6px;">Jedan pacijent po terminu, plan lečenja na papiru i cena poznata pre početka rada.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 11.2px;">
+          <button class="btn btn-primary" onClick="{{ goZakazivanje }}">Zakaži termin</button>
+          <button class="btn btn-ghost" onClick="{{ goONama }}">Upoznaj tim</button>
+        </div>
+      </div>
+    </section>
+    </sc-if>
+
+    <sc-if value="{{ prikaziPrekidac }}" hint-placeholder-val="{{ true }}">
+    <div style="max-width: 1100px; margin: 0 auto; padding: 0 clamp(18px, 5vw, 22.4px);">
+      <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 11.2px; padding: 16.8px 0;">
+        <span style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-neutral-600);">Varijanta početne</span>
+        <div class="seg" style="display: inline-flex;">
+          <button class="seg-opt" onClick="{{ setHeroA }}" style="cursor: pointer;">A — podeljeni</button>
+          <button class="seg-opt" onClick="{{ setHeroB }}" style="cursor: pointer;">B — puna slika</button>
+        </div>
+      </div>
+    </div>
+    </sc-if>
+
+    <section style="background: var(--color-section); background-image: radial-gradient(120% 160% at 12% 0%, var(--color-section-glow) 0%, transparent 62%);">
+      <div style="max-width: 1100px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(18px, 5vw, 22.4px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 33.6px;">
+        <div>
+          <div style="font-family: var(--font-heading); font-size: clamp(30px, 3.3vw, 40px); font-weight: 500; letter-spacing: -0.03em; color: #e2e7ff;">7.400+</div>
+          <div style="font-size: 13px; color: var(--color-section-ghost); filter: brightness(1.7);">završenih terapija</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-heading); font-size: clamp(30px, 3.3vw, 40px); font-weight: 500; letter-spacing: -0.03em; color: #e2e7ff;">3D</div>
+          <div style="font-size: 13px; color: var(--color-section-ghost); filter: brightness(1.7);">digitalni snimak na mestu</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-heading); font-size: clamp(30px, 3.3vw, 40px); font-weight: 500; letter-spacing: -0.03em; color: #e2e7ff;">5 god.</div>
+          <div style="font-size: 13px; color: var(--color-section-ghost); filter: brightness(1.7);">garancija na protetiku</div>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width: 1100px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(18px, 5vw, 22.4px);">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 22.4px 33.6px; margin-bottom: 33.6px;">
+        <div>
+          <span style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700);">Usluge</span>
+          <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(26px, 3vw, 36px); line-height: 1.15; letter-spacing: -0.025em; margin: 11.2px 0 0; color: var(--color-text);">Pet oblasti, bez rasipanja pažnje</h2>
+        </div>
+        <button class="btn btn-ghost" onClick="{{ goUsluge }}" style="flex: none;">Sve usluge</button>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16.8px;">
+        <sc-for list="{{ usluge }}" as="u" hint-placeholder-count="5">
+          <article class="card" style="position: relative; display: flex; flex-direction: column; gap: 8.4px; min-height: 176px;">
+            <div class="card-kicker">{{ u.kicker }}</div>
+            <h3 class="card-title" style="margin: 0;">{{ u.naziv }}</h3>
+            <p class="card-body" style="margin: 0; flex: 1;">{{ u.opis }}</p>
+            <div style="padding-top: 8.4px; padding-right: 90px;">
+              <sc-if value="{{ prikaziCene }}" hint-placeholder-val="{{ true }}">
+                <div class="card-meta">od {{ u.cena }}</div>
+              </sc-if>
+            </div>
+            <button onClick="{{ goUsluge }}" style="position: absolute; right: 10px; bottom: 10px; background: none; border: 0; padding: 0; cursor: pointer; font-family: var(--font-body); font-size: 13px; color: var(--color-accent-600); border-bottom: 1px solid var(--color-accent-300);">Saznaj više</button>
+          </article>
+        </sc-for>
+      </div>
+    </section>
+
+    <section style="border-top: 1px solid var(--color-divider); border-bottom: 1px solid var(--color-divider);">
+      <div style="max-width: 1100px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(18px, 5vw, 22.4px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: clamp(28px, 4vw, 56px); align-items: center;">
+        <div class="lighten" style="border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 1 / 1; box-shadow: var(--shadow-sm);">
+          <image-slot id="pocetna-detalj" src="https://d8j0ntlcm91z4.cloudfront.net/user_3IJK95KBky8W2Adx3iaAv4phacB/hf_20260903_161621_01457fad-efa1-4eac-8348-7f8513b2e1b1.png" shape="rounded" placeholder="Detalj instrumenta ili ruku u radu, tamna pozadina"></image-slot>
+        </div>
+        <div>
+          <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(24px, 2.7vw, 32px); line-height: 1.18; letter-spacing: -0.025em; margin: 0 0 33.6px; color: var(--color-text); max-width: 26ch; text-wrap: pretty;">Zašto pacijenti ostaju sa nama godinama</h2>
+          <div style="display: grid; gap: 22.4px;">
+            <sc-for list="{{ razlozi }}" as="r" hint-placeholder-count="3">
+              <div style="display: grid; grid-template-columns: 28px 1fr; gap: 16.8px; align-items: start;">
+                <span style="font-family: var(--font-heading); font-size: 13px; color: var(--color-accent); padding-top: 4px;">{{ r.br }}</span>
+                <div>
+                  <div style="font-family: var(--font-heading); font-size: 17px; font-weight: 500; color: var(--color-text); margin-bottom: 2.8px;">{{ r.naslov }}</div>
+                  <p style="margin: 0; font-size: 14.5px; color: var(--color-neutral-600); max-width: 52ch;">{{ r.tekst }}</p>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width: 1100px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(18px, 5vw, 22.4px);">
+      <div style="display: flex; justify-content: flex-end; margin-bottom: 22.4px;">
+        <button onClick="{{ prebaciUtiske }}" style="background: none; border: 0; padding: 0; cursor: pointer; font-family: var(--font-body); font-size: 13.5px; color: var(--color-accent-600); border-bottom: 1px solid var(--color-accent-300);">
+          <sc-if value="{{ manjeUtisaka }}" hint-placeholder-val="{{ true }}">Vidi još</sc-if>
+          <sc-if value="{{ viseUtisaka }}" hint-placeholder-val="{{ false }}">Prikaži manje</sc-if>
+        </button>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: clamp(28px, 3.5vw, 44px); align-items: start;">
+      <blockquote style="margin: 0; max-width: 30ch;">
+        <p style="font-family: var(--font-heading); font-weight: 300; font-size: clamp(19px, 1.9vw, 22px); line-height: 1.4; letter-spacing: -0.015em; color: var(--color-text); margin: 0 0 16.8px; text-wrap: pretty;">„Prvi put sam otišla kod stomatologa bez knedle u grlu. Sve mi je objašnjeno unapred, do dinara.”</p>
+        <footer style="font-size: 13px; color: var(--color-neutral-600);">Jelena M. · pacijentkinja od 2018.</footer>
+      </blockquote>
+
+      <blockquote style="margin: 0; max-width: 30ch;">
+        <p style="font-family: var(--font-heading); font-weight: 300; font-size: clamp(19px, 1.9vw, 22px); line-height: 1.4; letter-spacing: -0.015em; color: var(--color-text); margin: 0 0 16.8px; text-wrap: pretty;">„Tražio sam drugo mišljenje za tri krunice. Rekli su mi da su dve nepotrebne — i objasnili zašto.”</p>
+        <footer style="font-size: 13px; color: var(--color-neutral-600);">Nemanja S. · protetika, 2023.</footer>
+      </blockquote>
+
+      <blockquote style="margin: 0; max-width: 30ch;">
+        <p style="font-family: var(--font-heading); font-weight: 300; font-size: clamp(19px, 1.9vw, 22px); line-height: 1.4; letter-spacing: -0.015em; color: var(--color-text); margin: 0 0 16.8px; text-wrap: pretty;">„Sin je do tada plakao pred svakom ordinacijom. Prvi termin je bio samo sedenje u stolici i priča.”</p>
+        <footer style="font-size: 13px; color: var(--color-neutral-600);">Marija T. · dečja stomatologija, 2024.</footer>
+      </blockquote>
+      </div>
+
+      <sc-if value="{{ viseUtisaka }}" hint-placeholder-val="{{ false }}">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: clamp(28px, 3.5vw, 44px); align-items: start; margin-top: 44px; animation: dentisFade 0.4s ease both;">
+          <blockquote style="margin: 0; max-width: 30ch;">
+            <p style="font-family: var(--font-heading); font-weight: 300; font-size: clamp(19px, 1.9vw, 22px); line-height: 1.4; letter-spacing: -0.015em; color: var(--color-text); margin: 0 0 16.8px; text-wrap: pretty;">„Došao sam sa jakim bolom u petak popodne, bez zakazivanja. Primili su me za pola sata.”</p>
+            <footer style="font-size: 13px; color: var(--color-neutral-600);">Dragan P. · urgentno, 2024.</footer>
+          </blockquote>
+          <blockquote style="margin: 0; max-width: 30ch;">
+            <p style="font-family: var(--font-heading); font-weight: 300; font-size: clamp(19px, 1.9vw, 22px); line-height: 1.4; letter-spacing: -0.015em; color: var(--color-text); margin: 0 0 16.8px; text-wrap: pretty;">„Ista cena na kraju kao u ponudi na početku. Kod prethodnog stomatologa je to bio problem svaki put.”</p>
+            <footer style="font-size: 13px; color: var(--color-neutral-600);">Sanja K. · sanacija, 2023.</footer>
+          </blockquote>
+          <blockquote style="margin: 0; max-width: 30ch;">
+            <p style="font-family: var(--font-heading); font-weight: 300; font-size: clamp(19px, 1.9vw, 22px); line-height: 1.4; letter-spacing: -0.015em; color: var(--color-text); margin: 0 0 16.8px; text-wrap: pretty;">„Idem na čišćenje dva puta godišnje već sedam godina. Nikad nisam čekala duže od dva minuta.”</p>
+            <footer style="font-size: 13px; color: var(--color-neutral-600);">Aleksandra M. · profilaksa</footer>
+          </blockquote>
+        </div>
+      </sc-if>
+    </section>
+
+    <section style="border-top: 1px solid var(--color-divider);">
+      <div style="max-width: 1100px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(18px, 5vw, 22.4px); display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;">
+        <div>
+          <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(24px, 2.5vw, 30px); letter-spacing: -0.025em; margin: 0 0 8.4px; color: var(--color-text);">Prvi pregled je besplatan.</h2>
+          <p style="margin: 0; font-size: 15px; color: var(--color-neutral-600);">Odgovaramo na sve upite istog radnog dana.</p>
+        </div>
+        <button class="btn btn-primary" onClick="{{ goZakazivanje }}">Zakaži termin</button>
+      </div>
+    </section>
+  </main>
+  </sc-if>
+
+  <sc-if value="{{ isUsluge }}" hint-placeholder-val="{{ false }}">
+  <main>
+    <section style="position: relative; min-height: min(400px, 52vh); display: flex; align-items: flex-end; overflow: hidden; border-bottom: 1px solid var(--color-divider);">
+      <div class="lighten" style="position: absolute; inset: 0;">
+        <image-slot id="usluge-hero" src="https://d8j0ntlcm91z4.cloudfront.net/user_3IJK95KBky8W2Adx3iaAv4phacB/hf_20260903_202235_c2f493b8-fe80-4221-a62a-9f344c1339d7.png" shape="rect" placeholder="Široka fotografija ordinacije"></image-slot>
+      </div>
+      <div style="position: absolute; inset: 0; background: linear-gradient(90deg, var(--color-bg) 8%, color-mix(in srgb, var(--color-bg) 60%, transparent) 60%, transparent 100%);"></div>
+      <div style="position: relative; max-width: 1100px; margin: 0 auto; width: 100%; padding: clamp(56px, 8vw, 96px) clamp(18px, 5vw, 22.4px) clamp(32px, 4vw, 48px);">
+        <span style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700);">Usluge</span>
+        <h1 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(30px, 3.9vw, 46px); line-height: 1.1; letter-spacing: -0.03em; margin: 11.2px 0 16.8px; max-width: 22ch; color: var(--color-text); text-wrap: pretty;">Radimo pet stvari i radimo ih dobro</h1>
+        <p style="max-width: 48ch; font-size: 16.5px; color: var(--color-neutral-600); margin: 0;">Svaka terapija počinje pregledom i pisanim planom sa cenom. Ako neka intervencija nije potrebna, reći ćemo vam to — i to je najčešći razlog zašto nas pacijenti preporučuju.</p>
+      </div>
+    </section>
+    <div style="max-width: 1100px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(18px, 5vw, 22.4px);">
+
+    <div style="display: grid; gap: 0;">
+      <sc-for list="{{ uslugeDetalj }}" as="u" hint-placeholder-count="5">
+        <article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: clamp(28px, 4vw, 56px); padding: clamp(32px, 3.5vw, 44px) 0; border-top: 1px solid var(--color-divider); align-items: start;">
+          <div>
+            <div style="font-family: var(--font-heading); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 11.2px;">{{ u.kicker }}</div>
+            <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(22px, 2.3vw, 27px); line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 11.2px; color: var(--color-text);">{{ u.naziv }}</h2>
+            <div style="font-size: 13.5px; color: var(--color-neutral-600);">{{ u.trajanje }} · od {{ u.cena }}</div>
+          </div>
+          <div>
+            <p style="margin: 0 0 22.4px; font-size: 16px; color: var(--color-neutral-700); max-width: 62ch; text-wrap: pretty;">{{ u.dugiOpis }}</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 5.6px; margin-bottom: 22.4px;">
+              <sc-for list="{{ u.tacke }}" as="t" hint-placeholder-count="3">
+                <span class="tag tag-outline" style="flex: none; white-space: nowrap;">{{ t }}</span>
+              </sc-for>
+            </div>
+            <sc-if value="{{ u.otvorena }}" hint-placeholder-val="{{ false }}">
+              <div style="border-left: 2px solid var(--color-accent-300); padding: 4px 0 4px 18px; margin-bottom: 16.8px; animation: dentisFade 0.35s ease both;">
+                <p style="margin: 0; font-size: 15px; color: var(--color-neutral-700); max-width: 62ch; text-wrap: pretty;">{{ u.detaljno }}</p>
+              </div>
+            </sc-if>
+            <button class="btn btn-ghost" onClick="{{ u.prebaci }}" style="font-size: 13.5px; white-space: nowrap;">
+              <sc-if value="{{ u.zatvorena }}" hint-placeholder-val="{{ true }}">Saznaj više</sc-if>
+              <sc-if value="{{ u.otvorena }}" hint-placeholder-val="{{ false }}">Prikaži manje</sc-if>
+            </button>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+
+    <div style="margin-top: 56px; padding-top: 33.6px; border-top: 1px solid var(--color-divider); display: flex; gap: 16.8px; align-items: center; flex-wrap: wrap;">
+      <p style="margin: 0; font-size: 15px; color: var(--color-neutral-600);">Nisi siguran šta ti treba? Konsultacija je besplatna.</p>
+      <button class="btn btn-primary" onClick="{{ goZakazivanje }}">Zakaži konsultaciju</button>
+    </div>
+    </div>
+  </main>
+  </sc-if>
+
+  <sc-if value="{{ isONama }}" hint-placeholder-val="{{ false }}">
+  <main>
+    <section style="max-width: 1100px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(18px, 5vw, 22.4px) clamp(32px, 4vw, 48px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: clamp(28px, 4vw, 56px); align-items: end;">
+      <div>
+        <span style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700);">O nama</span>
+        <h1 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(30px, 3.9vw, 46px); line-height: 1.1; letter-spacing: -0.03em; margin: 11.2px 0 22.4px; max-width: 20ch; color: var(--color-text); text-wrap: pretty;">Mala ordinacija, namerno mala</h1>
+        <p style="max-width: 52ch; font-size: 16.5px; color: var(--color-neutral-700); margin: 0 0 16.8px;">Klinika Jugović je otvorena 2009. u Karađorđevoj kao ordinacija za jednog stomatologa i jednu sestru. Petnaest godina kasnije nas je pet — i to je gornja granica koju smo sami sebi postavili.</p>
+        <p style="max-width: 52ch; font-size: 16.5px; color: var(--color-neutral-600); margin: 0;">Zato u čekaonici nikada nema više od jednog pacijenta, a termin od 45 minuta znači 45 minuta samo za vas. Sve što radimo — od profilaktičkog čišćenja do estetskih ljuspica — radi se u jednoj sali, sa istim timom, bez preprodaje usluga.</p>
+      </div>
+      <div class="lighten" style="border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 3 / 4; box-shadow: var(--shadow-md);">
+        <image-slot id="onama-portret" src="https://d8j0ntlcm91z4.cloudfront.net/user_3IJK95KBky8W2Adx3iaAv4phacB/hf_20260903_161621_7d265c5c-e049-4cce-bbbb-c0e20fae9b53.png" shape="rounded" placeholder="Portret glavnog stomatologa na tamnoj pozadini"></image-slot>
+      </div>
+    </section>
+
+    <section style="max-width: 1100px; margin: 0 auto; padding: clamp(32px, 4vw, 48px) clamp(18px, 5vw, 22.4px);">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 33.6px; padding-top: 33.6px; border-top: 1px solid var(--color-divider);">
+        <sc-for list="{{ vrednosti }}" as="v" hint-placeholder-count="3">
+          <div>
+            <span style="display: block; width: 28px; height: 1px; background: var(--color-accent); margin-bottom: 16.8px;"></span>
+            <h3 style="font-family: var(--font-heading); font-weight: 500; font-size: 19px; margin: 0 0 8.4px; color: var(--color-text);">{{ v.naslov }}</h3>
+            <p style="margin: 0; font-size: 14.5px; color: var(--color-neutral-600);">{{ v.tekst }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section style="max-width: 1100px; margin: 0 auto; padding: clamp(32px, 4vw, 48px) clamp(18px, 5vw, 22.4px) clamp(56px, 8vw, 96px);">
+      <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(24px, 2.5vw, 30px); letter-spacing: -0.025em; margin: 0 0 33.6px; color: var(--color-text);">Tim</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 22.4px;">
+        <sc-for list="{{ tim }}" as="c" hint-placeholder-count="3">
+          <article>
+            <div class="lighten" style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 1 / 1; margin-bottom: 16.8px; box-shadow: var(--shadow-sm);">
+              <image-slot id="{{ c.slotId }}" src="{{ c.slotSrc }}" shape="rounded" placeholder="{{ c.slotHint }}"></image-slot>
+            </div>
+            <h3 style="font-family: var(--font-heading); font-weight: 500; font-size: 18px; margin: 0 0 2.8px; color: var(--color-text);">{{ c.ime }}</h3>
+            <div style="font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); margin-bottom: 8.4px;">{{ c.uloga }}</div>
+            <p style="margin: 0; font-size: 14px; color: var(--color-neutral-600);">{{ c.bio }}</p>
+          </article>
+        </sc-for>
+      </div>
+    </section>
+  </main>
+  </sc-if>
+
+  <sc-if value="{{ isCenovnik }}" hint-placeholder-val="{{ false }}">
+  <main>
+    <section style="position: relative; min-height: min(400px, 52vh); display: flex; align-items: flex-end; overflow: hidden; border-bottom: 1px solid var(--color-divider);">
+      <div class="lighten" style="position: absolute; inset: 0;">
+        <image-slot id="cenovnik-hero" src="https://d8j0ntlcm91z4.cloudfront.net/user_3IJK95KBky8W2Adx3iaAv4phacB/hf_20260903_202030_88178c58-971b-4e3e-ba68-1936abc3b687.png" shape="rect" placeholder="Široka fotografija ordinacije"></image-slot>
+      </div>
+      <div style="position: absolute; inset: 0; background: linear-gradient(90deg, var(--color-bg) 8%, color-mix(in srgb, var(--color-bg) 60%, transparent) 60%, transparent 100%);"></div>
+      <div style="position: relative; max-width: 1100px; margin: 0 auto; width: 100%; padding: clamp(56px, 8vw, 96px) clamp(18px, 5vw, 22.4px) clamp(32px, 4vw, 48px);">
+        <span style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700);">Cenovnik</span>
+        <h1 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(30px, 3.9vw, 46px); line-height: 1.1; letter-spacing: -0.03em; margin: 11.2px 0 16.8px; max-width: 22ch; color: var(--color-text); text-wrap: pretty;">Cena koju vidite je cena koju plaćate</h1>
+        <p style="max-width: 48ch; font-size: 16.5px; color: var(--color-neutral-600); margin: 0;">Pregled i plan terapije se ne naplaćuju. Za svaki rad dobijate pisanu ponudu pre početka — bez naknadnih pozicija.</p>
+      </div>
+    </section>
+    <div style="max-width: 1100px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(18px, 5vw, 22.4px);">
+
+    <sc-for list="{{ cenovnik }}" as="g" hint-placeholder-count="3">
+      <section style="margin-bottom: 44px;">
+        <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: 21px; letter-spacing: -0.015em; margin: 0 0 16.8px; color: var(--color-text);">{{ g.grupa }}</h2>
+        <div style="overflow-x: auto; -webkit-overflow-scrolling: touch;"><table class="table" style="width: 100%; min-width: 340px;">
+          <thead>
+            <tr>
+              <th style="text-align: left;">Usluga</th>
+              <th style="text-align: left;">Trajanje</th>
+              <th style="text-align: right;">Cena</th>
+            </tr>
+          </thead>
+          <tbody>
+            <sc-for list="{{ g.stavke }}" as="s" hint-placeholder-count="4">
+              <tr>
+                <td>{{ s.naziv }}</td>
+                <td style="color: var(--color-neutral-600);">{{ s.trajanje }}</td>
+                <td style="text-align: right; white-space: nowrap;">{{ s.cena }}</td>
+              </tr>
+            </sc-for>
+          </tbody>
+        </table></div>
+      </section>
+    </sc-for>
+
+    <div class="card" style="max-width: 62ch;">
+      <div class="card-kicker">Plaćanje</div>
+      <p class="card-body" style="margin: 8.4px 0 0;">Gotovina i sve platne kartice. Terapije iznad 40.000 RSD mogu se podeliti na do 6 mesečnih rata bez kamate. Cene su u dinarima i važe od 1. januara 2026.</p>
+    </div>
+    </div>
+  </main>
+  </sc-if>
+
+  <sc-if value="{{ isKontakt }}" hint-placeholder-val="{{ false }}">
+  <main>
+    <section style="position: relative; min-height: min(400px, 52vh); display: flex; align-items: flex-end; overflow: hidden; border-bottom: 1px solid var(--color-divider);">
+      <div class="lighten" style="position: absolute; inset: 0;">
+        <image-slot id="kontakt-hero" src="https://d8j0ntlcm91z4.cloudfront.net/user_3IJK95KBky8W2Adx3iaAv4phacB/hf_20260903_202030_81981816-44e6-4e26-bee5-b4f1d6116583.png" shape="rect" placeholder="Široka fotografija ordinacije"></image-slot>
+      </div>
+      <div style="position: absolute; inset: 0; background: linear-gradient(90deg, var(--color-bg) 8%, color-mix(in srgb, var(--color-bg) 60%, transparent) 60%, transparent 100%);"></div>
+      <div style="position: relative; max-width: 1100px; margin: 0 auto; width: 100%; padding: clamp(56px, 8vw, 96px) clamp(18px, 5vw, 22.4px) clamp(32px, 4vw, 48px);">
+        <span style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700);">Kontakt</span>
+        <h1 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(30px, 3.9vw, 46px); line-height: 1.1; letter-spacing: -0.03em; margin: 11.2px 0 16.8px; max-width: 22ch; color: var(--color-text); text-wrap: pretty;">Karađorđeva 41, Šabac</h1>
+        <p style="max-width: 46ch; font-size: 16.5px; color: var(--color-neutral-600); margin: 0;">Privatna ordinacija u centru grada, ulaz iz dvorišta i besplatan parking za pacijente.</p>
+      </div>
+    </section>
+    <div style="max-width: 1100px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(18px, 5vw, 22.4px);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: clamp(28px, 4vw, 56px); align-items: start;">
+      <div style="display: grid; gap: 33.6px;">
+        <div>
+          <div style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-600); margin-bottom: 8.4px;">Telefon</div>
+          <a href="tel:+38115300400" style="font-family: var(--font-heading); font-size: clamp(21px, 2vw, 24px); letter-spacing: -0.02em;">015 300 400</a>
+          <div style="font-size: 13.5px; color: var(--color-neutral-600); margin-top: 2.8px;">Viber i WhatsApp na isti broj</div>
+        </div>
+        <div>
+          <div style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-600); margin-bottom: 8.4px;">E-pošta</div>
+          <a href="mailto:termin@klinika-jugovic.rs" style="font-size: 16px;">termin@klinika-jugovic.rs</a>
+        </div>
+        <div>
+          <div style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-600); margin-bottom: 11.2px;">Radno vreme</div>
+          <div style="display: grid; gap: 5.6px; font-size: 15px;">
+            <sc-for list="{{ radnoVreme }}" as="d" hint-placeholder-count="3">
+              <div style="display: flex; justify-content: space-between; gap: 22.4px; max-width: 30ch; color: var(--color-neutral-700);">
+                <span>{{ d.dan }}</span>
+                <span style="color: var(--color-text);">{{ d.sati }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-600); margin-bottom: 8.4px;">Dolazak</div>
+          <p style="margin: 0; font-size: 14.5px; color: var(--color-neutral-600); max-width: 40ch;">Ulaz iz dvorišta, pristup bez stepenika. Besplatan parking za pacijente u dvorištu (3 mesta).</p>
+        </div>
+        <button class="btn btn-primary" onClick="{{ goZakazivanje }}" style="justify-self: start;">Zakaži termin online</button>
+      </div>
+      <div class="lighten" style="border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 4 / 3; box-shadow: var(--shadow-md);">
+        <image-slot id="kontakt-mapa" src="https://d8j0ntlcm91z4.cloudfront.net/user_3IJK95KBky8W2Adx3iaAv4phacB/hf_20260903_161621_8a26db3f-6dac-4f31-ac0b-2cc09c3f6889.png" shape="rounded" placeholder="Snimak mape ili fotografija ulaza u ordinaciju"></image-slot>
+      </div>
+    </div>
+    </div>
+  </main>
+  </sc-if>
+
+  <sc-if value="{{ isZakazivanje }}" hint-placeholder-val="{{ false }}">
+  <main style="max-width: 1100px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(18px, 5vw, 22.4px);">
+    <sc-if value="{{ poslato }}" hint-placeholder-val="{{ false }}">
+      <div style="max-width: 46ch; padding: 44px 0;">
+        <span style="display: block; width: 42px; height: 1px; background: var(--color-accent); margin-bottom: 22.4px;"></span>
+        <h1 style="font-family: var(--font-heading); font-weight: 500; font-size: 38px; line-height: 1.12; letter-spacing: -0.03em; margin: 0 0 16.8px; color: var(--color-text);">Zahtev je primljen.</h1>
+        <p style="font-size: 16.5px; color: var(--color-neutral-700); margin: 0 0 33.6px;">Zovemo vas u toku istog radnog dana da potvrdimo tačno vreme. Ako vam se nešto promeni, pozovite 015 300 400.</p>
+        <button class="btn btn-ghost" onClick="{{ resetForme }}">Pošalji još jedan zahtev</button>
+      </div>
+    </sc-if>
+    <sc-if value="{{ nijePoslato }}" hint-placeholder-val="{{ true }}">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: clamp(28px, 4vw, 56px); align-items: start;">
+        <div>
+          <span style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700);">Zakazivanje</span>
+          <h1 style="font-family: var(--font-heading); font-weight: 500; font-size: 42px; line-height: 1.08; letter-spacing: -0.03em; margin: 11.2px 0 22.4px; color: var(--color-text); text-wrap: pretty;">Ostavite broj, mi zovemo</h1>
+          <p style="font-size: 16px; color: var(--color-neutral-600); margin: 0 0 33.6px; max-width: 36ch;">Forma je zahtev, ne konačan termin — vreme potvrđujemo telefonom da vam ne bismo dali sat koji vam ne odgovara.</p>
+          <div style="padding-top: 22.4px; border-top: 1px solid var(--color-divider); display: grid; gap: 11.2px; font-size: 14px; color: var(--color-neutral-600);">
+            <div>Prvi pregled i plan terapije — bez naplate.</div>
+            <div>Prosečno vreme do slobodnog termina: 48 h.</div>
+            <div>Hitni slučajevi: pozovite, uvek držimo jedan termin slobodan.</div>
+          </div>
+        </div>
+        <form onSubmit="{{ posalji }}" style="display: grid; gap: 16.8px;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 16.8px;">
+            <div class="field">
+              <label for="ime">Ime i prezime</label>
+              <input class="input" id="ime" type="text" required="required" placeholder="Milica Jovanović" value="{{ form.ime }}" onChange="{{ onIme }}">
+            </div>
+            <div class="field">
+              <label for="tel">Telefon</label>
+              <input class="input" id="tel" type="tel" required="required" placeholder="064 123 4567" value="{{ form.tel }}" onChange="{{ onTel }}">
+            </div>
+          </div>
+          <div class="field">
+            <label for="usluga">Usluga</label>
+            <select class="input" id="usluga" value="{{ form.usluga }}" onChange="{{ onUsluga }}">
+              <sc-for list="{{ imenaUsluga }}" as="n" hint-placeholder-count="5">
+                <option value="{{ n }}">{{ n }}</option>
+              </sc-for>
+            </select>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 16.8px;">
+            <div class="field">
+              <label for="datum">Željeni datum</label>
+              <input class="input" id="datum" type="date" value="{{ form.datum }}" onChange="{{ onDatum }}">
+            </div>
+            <div class="field">
+              <label>Deo dana</label>
+              <div class="seg">
+                <button class="seg-opt" type="button" onClick="{{ setJutro }}" style="cursor: pointer; color: {{ delColor.jutro }};">Pre podne</button>
+                <button class="seg-opt" type="button" onClick="{{ setPodne }}" style="cursor: pointer; color: {{ delColor.podne }};">Posle podne</button>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label for="poruka">Napomena (opciono)</label>
+            <input class="input" id="poruka" type="text" placeholder="Bol u gornjem levom kutnjaku već tri dana" value="{{ form.poruka }}" onChange="{{ onPoruka }}">
+          </div>
+          <div style="display: flex; align-items: center; gap: 16.8px; flex-wrap: wrap; padding-top: 8.4px;">
+            <button class="btn btn-primary" type="submit">Pošalji zahtev</button>
+            <span style="font-size: 12.5px; color: var(--color-neutral-600);">Podatke koristimo isključivo za zakazivanje.</span>
+          </div>
+        </form>
+      </div>
+    </sc-if>
+  </main>
+  </sc-if>
+
+  <footer style="border-top: 1px solid var(--color-divider); margin-top: 22.4px;">
+    <div style="max-width: 1100px; margin: 0 auto; padding: clamp(32px, 4vw, 48px) clamp(18px, 5vw, 22.4px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 33.6px;">
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 8.4px; margin-bottom: 11.2px;">
+          <span style="font-family: var(--font-heading); font-size: 18px; font-weight: 500; color: var(--color-text);">Jugović</span>
+          <span style="font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-accent);">Klinika</span>
+        </div>
+        <p style="margin: 0; font-size: 13.5px; color: var(--color-neutral-600); max-width: 36ch;">Privatna stomatološka ordinacija. Karađorđeva 41, 15000 Šabac. Licenca Stomatološke komore Srbije br. 4118.</p>
+      </div>
+      <div style="display: grid; gap: 8.4px; align-content: start; font-size: 13.5px;">
+        <div style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-600); margin-bottom: 2.8px;">Stranice</div>
+        <button onClick="{{ goUsluge }}" style="background: none; border: 0; padding: 0; text-align: left; cursor: pointer; font-family: var(--font-body); font-size: 13.5px; color: var(--color-neutral-700);">Usluge</button>
+        <button onClick="{{ goONama }}" style="background: none; border: 0; padding: 0; text-align: left; cursor: pointer; font-family: var(--font-body); font-size: 13.5px; color: var(--color-neutral-700);">O nama</button>
+        <button onClick="{{ goCenovnik }}" style="background: none; border: 0; padding: 0; text-align: left; cursor: pointer; font-family: var(--font-body); font-size: 13.5px; color: var(--color-neutral-700);">Cenovnik</button>
+        <button onClick="{{ goKontakt }}" style="background: none; border: 0; padding: 0; text-align: left; cursor: pointer; font-family: var(--font-body); font-size: 13.5px; color: var(--color-neutral-700);">Kontakt</button>
+      </div>
+      <div style="display: grid; gap: 8.4px; align-content: start; font-size: 13.5px; color: var(--color-neutral-700);">
+        <div style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-600); margin-bottom: 2.8px;">Kontakt</div>
+        <a href="tel:+38115300400">015 300 400</a>
+        <a href="mailto:termin@klinika-jugovic.rs">termin@klinika-jugovic.rs</a>
+        <div>Pon–pet 08–20 · Sub 09–14</div>
+      </div>
+    </div>
+    <div style="max-width: 1100px; margin: 0 auto; padding: 0 clamp(18px, 5vw, 22.4px) 33.6px; font-size: 12px; color: var(--color-neutral-600);">© 2026 Klinika Jugović</div>
+  </footer>
+
+  <template id="__bundler_thumbnail">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+      <rect width="200" height="200" fill="#1b4ea8"></rect>
+      <text x="100" y="118" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="500" fill="#ffffff">KJ</text>
+    </svg>
+  </template>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;pocetnaHero&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;a&quot;, &quot;b&quot;], &quot;default&quot;: &quot;b&quot;, &quot;tsType&quot;: &quot;'a' | 'b'&quot;, &quot;section&quot;: &quot;Početna&quot;}, &quot;prikaziPrekidac&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Početna&quot;}, &quot;prikaziCene&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Početna&quot;}}">
+class Component extends DCLogic {
+  state = {
+    page: 'pocetna',
+    hero: null,
+    poslato: false,
+    otvorene: {},
+    form: { ime: '', tel: '', usluga: 'Opšta stomatologija', datum: '', deo: 'jutro', poruka: '' }
+  };
+
+  strane = ['pocetna', 'usluge', 'onama', 'cenovnik', 'kontakt', 'zakazivanje'];
+
+  componentDidMount() {
+    this.mq = () => this.setState({ uzak: window.innerWidth <= 720 });
+    this.mq();
+    window.addEventListener('resize', this.mq);
+
+    this.onHash = () => {
+      const h = (window.location.hash || '').replace('#', '');
+      if (this.strane.indexOf(h) >= 0) this.setState({ page: h, meniOtvoren: false });
+    };
+    this.onHash();
+    window.addEventListener('hashchange', this.onHash);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.mq);
+    window.removeEventListener('hashchange', this.onHash);
+  }
+
+  go(page) {
+    this.setState({ page, meniOtvoren: false });
+    if (typeof window !== 'undefined') {
+      if (window.location.hash !== '#' + page) window.location.hash = page;
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    }
+  }
+
+  setField(k) {
+    return (e) => {
+      const v = e.target.value;
+      this.setState((s) => ({ form: Object.assign({}, s.form, { [k]: v }) }));
+    };
+  }
+
+  renderVals() {
+    const p = this.state.page;
+    const acc = 'var(--color-text)';
+    const dim = 'var(--color-neutral-600)';
+
+    const usluge = [
+      { kicker: 'Osnova', naziv: 'Opšta stomatologija', opis: 'Pregled, plombe, lečenje kanala i sanacija — sve pod jednim planom terapije.', cena: '3.500 RSD' },
+      { kicker: 'Estetika', naziv: 'Estetska stomatologija', opis: 'Kompozitne nadogradnje i keramičke ljuspice usklađene sa tonom vaših zuba.', cena: '28.000 RSD' },
+      { kicker: 'Deca', naziv: 'Dečja stomatologija', opis: 'Prvi pregled bez instrumenata. Zalivanje fisura i navika koja ostaje za život.', cena: '2.500 RSD' },
+      { kicker: 'Profilaksa', naziv: 'Profesionalno čišćenje', opis: 'Ultrazvučno uklanjanje kamenca, air-flow i poliranje u jednom terminu.', cena: '5.000 RSD' },
+      { kicker: 'Beljenje', naziv: 'Beljenje zuba', opis: 'Ordinacijsko beljenje ili kućni set sa individualnim folijama.', cena: '18.000 RSD' }
+    ];
+
+    const uslugeDetalj = [
+      { kicker: 'Osnova', naziv: 'Opšta stomatologija', trajanje: '30–60 min', cena: '3.500 RSD',
+        dugiOpis: 'Sve počinje pregledom i digitalnim snimkom. Dobijate pisani plan sa prioritetima: šta mora sada, šta može da čeka i šta nikada nije bilo potrebno. Plombe radimo kompozitom u sloju, sa izolacijom polja — trajnije je i ne boji se vremenom.',
+        tacke: ['Pregled i plan terapije', 'Kompozitne plombe', 'Endodoncija', 'Vađenje zuba'] },
+      { kicker: 'Estetika', naziv: 'Estetska stomatologija', trajanje: '2–3 termina', cena: '28.000 RSD',
+        dugiOpis: 'Pre bilo kakvog brušenja pravimo digitalnu simulaciju i probu u vosku — vidite rezultat pre nego što se bilo šta nepovratno uradi. Ljuspice se rade u laboratoriji sa kojom radimo petnaest godina, a boju određujemo pri dnevnom svetlu, ne pod lampom.',
+        tacke: ['Keramičke ljuspice', 'Kompozitna nadogradnja', 'Digitalna simulacija', 'Zatvaranje dijasteme'] },
+      { kicker: 'Deca', naziv: 'Dečja stomatologija', trajanje: '20–40 min', cena: '2.500 RSD',
+        dugiOpis: 'Prvi termin je upoznavanje: dete sedi u stolici, gleda instrumente i ništa se ne radi. Tek drugi put počinjemo pregled. Zalivanje fisura i fluorizacija su najisplativije stvari koje ćete ikada uraditi za zube svog deteta.',
+        tacke: ['Termin upoznavanja', 'Zalivanje fisura', 'Fluorizacija', 'Plombe u mlečnim zubima'] },
+      { kicker: 'Profilaksa', naziv: 'Profesionalno čišćenje', trajanje: '45 min', cena: '5.000 RSD',
+        dugiOpis: 'Ultrazvučno uklanjanje kamenca, air-flow protiv pigmentacija od kafe i nikotina, pa poliranje i fluorizacija. Preporučujemo dva puta godišnje — pacijentima sa aparatićem ili implantima tri.',
+        tacke: ['Ultrazvuk', 'Air-flow', 'Poliranje', 'Instruktaž higijene'] },
+      { kicker: 'Beljenje', naziv: 'Beljenje zuba', trajanje: '60 min', cena: '18.000 RSD',
+        dugiOpis: 'Beljenje radimo samo posle čišćenja i sanacije — na kamencu i karijesu rezultat je nejednak i bolan. Ordinacijski postupak daje 4–6 tonova u jednom terminu; kućni set sa folijama je nežniji i ide sporije, po vašem tempu.',
+        tacke: ['Ordinacijsko beljenje', 'Kućni set sa folijama', 'Kontrola osetljivosti'] }
+    ];
+
+    const dodatno = {
+      'Opšta stomatologija': 'Kako izgleda termin: pregled i digitalni snimak (15 min), zatim razgovor o planu i cenama. Rad počinje tek u sledećem terminu, osim ako imate bol — tada rešavamo isti dan. Anestezija je kompjuterizovana, bez naglog pritiska i bez osećaja igle. Posle plombe možete odmah da jedete; posle lečenja kanala savetujemo dva sata pauze.',
+      'Estetska stomatologija': 'Kako izgleda termin: prvo fotografije i digitalni skener, pa simulacija koju gledate na ekranu i menjamo dok vam se ne dopadne. Zatim proba u vosku direktno u ustima. Brušenje je minimalno — kod većine slučajeva ispod 0,5 mm. Ljuspice se postavljaju u trećem terminu, a boju određujemo pri dnevnom svetlu na prozoru, ne pod lampom.',
+      'Dečja stomatologija': 'Kako izgleda termin: prvi put dete samo sedi u stolici, drži ogledalce i ništa se ne radi — cilj je da izađe nasmejano. Pregled ide drugi put. Roditelj je uvek u sali. Zalivanje fisura traje 20 minuta, bez brušenja i bez anestezije. Fluorizaciju preporučujemo dva puta godišnje do dvanaeste godine.',
+      'Profesionalno čišćenje': 'Kako izgleda termin: ultrazvuk uklanja kamenac sa svih površina, air-flow zatim uklanja pigmentacije od kafe, čaja i nikotina, pa sledi poliranje i fluorizacija. Traje 45 minuta i nije bolno, može biti neprijatno kod povučene gingive. Na kraju dobijate instruktaž — koja četkica, koji konac i gde grešite.',
+      'Beljenje zuba': 'Kako izgleda termin: beljenje radimo samo posle čišćenja i sanacije. Gingiva se zaštiti barijerom, gel se nanosi u tri ciklusa po 15 minuta. Rezultat je 4–6 tonova svetlije. Prva 48 sata izbegavajte kafu, vino, cveklu i cigarete. Osetljivost, ako se pojavi, prolazi u toku dana.'
+    };
+
+    const cenovnik = [
+      { grupa: 'Pregled i profilaksa', stavke: [
+        { naziv: 'Prvi pregled i plan terapije', trajanje: '30 min', cena: 'bez naplate' },
+        { naziv: 'Kontrolni pregled', trajanje: '15 min', cena: '1.500 RSD' },
+        { naziv: 'Uklanjanje kamenca (ultrazvuk)', trajanje: '30 min', cena: '3.500 RSD' },
+        { naziv: 'Kompletno čišćenje sa air-flow', trajanje: '45 min', cena: '5.000 RSD' },
+        { naziv: 'Digitalni RTG snimak zuba', trajanje: '5 min', cena: '900 RSD' }
+      ] },
+      { grupa: 'Opšta stomatologija', stavke: [
+        { naziv: 'Kompozitna plomba, jedna površina', trajanje: '30 min', cena: '3.500 RSD' },
+        { naziv: 'Kompozitna plomba, dve i više', trajanje: '45 min', cena: '5.500 RSD' },
+        { naziv: 'Lečenje kanala, jednokanalni zub', trajanje: '60 min', cena: '8.500 RSD' },
+        { naziv: 'Lečenje kanala, višekanalni zub', trajanje: '90 min', cena: '13.000 RSD' },
+        { naziv: 'Vađenje zuba', trajanje: '30 min', cena: '4.500 RSD' }
+      ] },
+      { grupa: 'Estetika, deca i beljenje', stavke: [
+        { naziv: 'Keramička ljuspica, po zubu', trajanje: '2 termina', cena: '28.000 RSD' },
+        { naziv: 'Kompozitna nadogradnja, po zubu', trajanje: '60 min', cena: '9.000 RSD' },
+        { naziv: 'Ordinacijsko beljenje, oba viličana', trajanje: '60 min', cena: '18.000 RSD' },
+        { naziv: 'Kućni set za beljenje sa folijama', trajanje: '2 termina', cena: '14.000 RSD' },
+        { naziv: 'Dečji pregled', trajanje: '20 min', cena: '2.500 RSD' },
+        { naziv: 'Zalivanje fisura, po zubu', trajanje: '20 min', cena: '2.200 RSD' }
+      ] }
+    ];
+
+    return {
+      // navigacija
+      isPocetna: p === 'pocetna', isUsluge: p === 'usluge', isONama: p === 'onama',
+      isCenovnik: p === 'cenovnik', isKontakt: p === 'kontakt', isZakazivanje: p === 'zakazivanje',
+      navColor: {
+        pocetna: p === 'pocetna' ? acc : dim,
+        usluge: p === 'usluge' ? acc : dim,
+        onama: p === 'onama' ? acc : dim,
+        cenovnik: p === 'cenovnik' ? acc : dim,
+        kontakt: p === 'kontakt' ? acc : dim
+      },
+      goPocetna: () => this.go('pocetna'),
+      goUsluge: () => this.go('usluge'),
+      goONama: () => this.go('onama'),
+      goCenovnik: () => this.go('cenovnik'),
+      goKontakt: () => this.go('kontakt'),
+      goZakazivanje: () => this.go('zakazivanje'),
+
+      uzak: !!this.state.uzak,
+      sirok: !this.state.uzak,
+      meniOtvoren: !!this.state.meniOtvoren,
+      meniZatvoren: !this.state.meniOtvoren,
+      prebaciMeni: () => this.setState((s) => ({ meniOtvoren: !s.meniOtvoren })),
+
+      // hero varijante
+      isHeroA: (this.state.hero || this.props.pocetnaHero || 'b') === 'a',
+      isHeroB: (this.state.hero || this.props.pocetnaHero || 'b') === 'b',
+      prikaziPrekidac: this.props.prikaziPrekidac ?? false,
+      prikaziCene: this.props.prikaziCene ?? true,
+      setHeroA: () => this.setState({ hero: 'a' }),
+      setHeroB: () => this.setState({ hero: 'b' }),
+
+      usluge,
+      cenovnik,
+      uslugeDetalj: uslugeDetalj.map((u) => Object.assign({}, u, {
+        detaljno: dodatno[u.naziv] || '',
+        otvorena: !!this.state.otvorene[u.naziv],
+        zatvorena: !this.state.otvorene[u.naziv],
+        prebaci: () => this.setState((s) => ({ otvorene: Object.assign({}, s.otvorene, { [u.naziv]: !s.otvorene[u.naziv] }) }))
+      })),
+      imenaUsluga: usluge.map((u) => u.naziv).concat(['Nisam siguran — treba mi savet']),
+
+      razlozi: [
+        { br: '01', naslov: 'Jedan pacijent po terminu', tekst: 'Ne preklapamo termine. Vaših 45 minuta su vaših, i ako je potrebno više — ostajemo.' },
+        { br: '02', naslov: 'Cena unapred, na papiru', tekst: 'Pisana ponuda pre početka rada. Bez pozicija koje se „pojave” tokom terapije.' },
+        { br: '03', naslov: 'Bezbolno je standard, ne usluga', tekst: 'Kompjuterizovana anestezija i strpljenje. Većina pacijenata ne oseti ni ubod igle.' }
+      ],
+      vrednosti: [
+        { naslov: 'Konzervativno prvo', tekst: 'Ne brusimo zdrav zub ako postoji rešenje koje ga čuva. Uvek dobijate i tu opciju.' },
+        { naslov: 'Ista ruka do kraja', tekst: 'Terapiju koju je započeo jedan stomatolog on i završava. Bez prepuštanja smene.' },
+        { naslov: 'Tišina kao deo terapije', tekst: 'Bez muzike u čekaonici, bez zvona telefona u sali. Anksioznim pacijentima to znači više od bilo koje reči.' }
+      ],
+      tim: [
+        { ime: 'dr Marko Ilić', uloga: 'Osnivač · estetika', bio: 'Specijalista stomatološke protetike, 16 godina prakse. Vodi estetske slučajeve i planiranje.', slotId: 'tim-1', slotSrc: 'https://d8j0ntlcm91z4.cloudfront.net/user_3IJK95KBky8W2Adx3iaAv4phacB/hf_20260903_161621_7d265c5c-e049-4cce-bbbb-c0e20fae9b53.png', slotHint: 'Portret' },
+        { ime: 'dr Ana Vasić', uloga: 'Opšta i dečja', bio: 'Radi sa decom od 3 godine i sa odraslima koji se plaše stolice. Najsmireniji čovek u ordinaciji.', slotId: 'tim-2', slotSrc: 'https://d8j0ntlcm91z4.cloudfront.net/user_3IJK95KBky8W2Adx3iaAv4phacB/hf_20260903_161621_60a3ec4d-58e1-4e37-b277-9757a6fb237e.png', slotHint: 'Portret' },
+        { ime: 'Sanja Petrović', uloga: 'Dentalni higijeničar', bio: 'Profilaksa, air-flow i instruktaž higijene. Vaša druga poseta godišnje je uglavnom kod nje.', slotId: 'tim-3', slotSrc: 'https://d8j0ntlcm91z4.cloudfront.net/user_3IJK95KBky8W2Adx3iaAv4phacB/hf_20260903_161621_75858e26-114a-44ad-8e22-263cc82acec6.png', slotHint: 'Portret' }
+      ],
+      viseUtisaka: !!this.state.viseUtisaka,
+      manjeUtisaka: !this.state.viseUtisaka,
+      prebaciUtiske: () => this.setState((s) => ({ viseUtisaka: !s.viseUtisaka })),
+      utisci: [
+        { tekst: 'Prvi put sam otišla kod stomatologa bez knedle u grlu. Sve mi je objašnjeno unapred, do dinara.', ime: 'Jelena M.', detalj: 'pacijentkinja od 2018.' },
+        { tekst: 'Dovela sam sina od pet godina koji je do tada plakao pred svakom ordinacijom. Prvi termin je bio samo sedenje u stolici i priča. Danas sam ide do stolice.', ime: 'Marija T.', detalj: 'dečja stomatologija · 2024.' },
+        { tekst: 'Tražio sam drugo mišljenje za tri krunice. Rekli su mi da su dve nepotrebne i objasnili zašto. Uštedeli su mi oko 40.000 dinara i jedan zub.', ime: 'Nemanja S.', detalj: 'protetika · 2023.' },
+        { tekst: 'Ljuspice su rađene po simulaciji koju sam gledala na ekranu i menjala tri puta. Rezultat je tačno ono što smo se dogovorili — ništa nije bilo iznenađenje.', ime: 'Ivana R.', detalj: 'estetska stomatologija · 2025.' },
+        { tekst: 'Došao sam sa jakim bolom u petak popodne, bez zakazivanja. Primili su me za pola sata. To ti se pamti.', ime: 'Dragan P.', detalj: 'urgentno · 2024.' },
+        { tekst: 'Ista cena na kraju kao u ponudi na početku. Kod prethodnog stomatologa je to bio problem svaki put.', ime: 'Sanja K.', detalj: 'sanacija · 2023.' },
+        { tekst: 'Idem na čišćenje dva puta godišnje već sedam godina. Nikada nisam čekala u čekaonici duže od dva minuta.', ime: 'Aleksandra M.', detalj: 'profilaksa · redovan pacijent' }
+      ],
+      radnoVreme: [
+        { dan: 'Ponedeljak – petak', sati: '08:00 – 20:00' },
+        { dan: 'Subota', sati: '09:00 – 14:00' },
+        { dan: 'Nedelja', sati: 'zatvoreno' }
+      ],
+
+      // forma
+      form: this.state.form,
+      poslato: this.state.poslato,
+      nijePoslato: !this.state.poslato,
+      delColor: {
+        jutro: this.state.form.deo === 'jutro' ? acc : dim,
+        podne: this.state.form.deo === 'podne' ? acc : dim
+      },
+      setJutro: () => this.setState((s) => ({ form: Object.assign({}, s.form, { deo: 'jutro' }) })),
+      setPodne: () => this.setState((s) => ({ form: Object.assign({}, s.form, { deo: 'podne' }) })),
+      onIme: this.setField('ime'),
+      onTel: this.setField('tel'),
+      onUsluga: this.setField('usluga'),
+      onDatum: this.setField('datum'),
+      onPoruka: this.setField('poruka'),
+      posalji: (e) => { e.preventDefault(); this.setState({ poslato: true }); },
+      resetForme: () => this.setState({ poslato: false, form: { ime: '', tel: '', usluga: 'Opšta stomatologija', datum: '', deo: 'jutro', poruka: '' } })
+    };
+  }
+}
+</script>
+</body>
+</html>
